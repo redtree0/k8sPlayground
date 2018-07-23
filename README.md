@@ -16,9 +16,21 @@ k8s-playground sets up a kubernetes cluster on three VirtualBox virtual machines
 * [Virtualbox](https://www.virtualbox.org/)
 
 ### Installation
+```
+$ git clone https://github.com/redtree0/k8sPlayground
+$ cd k8sPlayground
+$ pip install virtualenv
+$ virtualenv -p python3 k8s_env
+$ source k8s_env/bin/activate
+```
 In the virtual environment, run
+
 ```
 $ pip install -r requirements.txt
+```
+Install ansible roles.
+```
+$ ansible-galaxy install -r requirements.yml -p roles/
 ```
 
 ### Create Virtual Machines

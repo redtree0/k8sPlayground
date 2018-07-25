@@ -1,0 +1,2 @@
+- src: git+https://github.com/redtree0/ansible-role-k8s.git
+  version: master

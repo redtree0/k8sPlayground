@@ -2,7 +2,6 @@
 
 - hosts: master
   become: yes
-  debugger: on_failed
   vars:
      k8s_mode: "master"
   roles:
@@ -10,7 +9,6 @@
 
 - hosts: worker
   become: yes
-  debugger: on_failed
   vars:
      k8s_mode: "worker"
   roles:

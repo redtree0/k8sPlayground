@@ -48,7 +48,7 @@ worker2 – 192.168.99.22
 ```
 $ make cluster
 ```
-As soon as it is done, you can ssh into kubemaster to see the nodes in the cluster by running `kubectl get nodes`. They may take a while to get ready. You should see something like this:
+As soon as it is done, you can ssh into kubemaster using `vagrant ssh kubemaster` to see the nodes in the cluster by running `kubectl get nodes`. They may take a while to get ready. You should see something like this:
 ```
 NAME         STATUS    ROLES     AGE       VERSION
 kubemaster   Ready     master    6m        v1.11.0
